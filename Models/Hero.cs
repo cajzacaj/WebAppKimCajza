@@ -25,6 +25,7 @@ namespace BethanysPieShop.Models
         public string ImageThumbnailUrl { get; set; }
         public bool IsPieOfTheWeek { get; set; }
         public bool IsInStock { get; set; }
-
+        public int Rating { get; set; }
+        public List<Comment> Comments { get; set; }
     }
 }

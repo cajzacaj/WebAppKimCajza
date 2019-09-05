@@ -1,5 +1,5 @@
 ﻿use BethanysPieShop
 
-select * from Pies
+select * from Heroes
 select * from AspNetUsers
 select * from Feedbacks
