@@ -1,0 +1,5 @@
+wwwroot/lib
+Migrations
+.vs
+bin
+obj
