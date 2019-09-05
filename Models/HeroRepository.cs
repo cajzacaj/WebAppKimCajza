@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.Models
 {
-    public class PieRepository: IPieRepository
+    public class HeroRepository: IHeroRepository
     {
         private readonly AppDbContext _appDbContext;
 
-        public PieRepository(AppDbContext appDbContext)
+        public HeroRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
@@ -21,14 +21,14 @@ namespace BethanysPieShop.Models
 
           GetPieById kommer göra en SELECT ... WHERE ...
         */
-        public IEnumerable<Pie> GetAllPies()
+        public IEnumerable<Hero> GetAllPies()
         {
-            return _appDbContext.Pies;
+            return _appDbContext.Heroes;
         }
 
-        public Pie GetPieById(int pieId)
+        public Hero GetPieById(int pieId)
         {
-            return _appDbContext.Pies.FirstOrDefault(p => p.Id == pieId);
+            return _appDbContext.Heroes.FirstOrDefault(p => p.Id == pieId);
         }
     }
 }

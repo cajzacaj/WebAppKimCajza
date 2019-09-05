@@ -20,7 +20,7 @@ namespace BethanysPieShop.ViewModels
     */
     public class HomeViewModel
     {
-        public List<Pie> Pies { get; set; }
+        public List<Hero> Pies { get; set; }
         public string Title { get; set; }
 
     }

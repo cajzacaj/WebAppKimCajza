@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.Models
 {
-    public interface IPieRepository
+    public interface IHeroRepository
     {
-        IEnumerable<Pie> GetAllPies();
+        IEnumerable<Hero> GetAllPies();
 
-        Pie GetPieById(int pieId);
+        Hero GetPieById(int pieId);
     }
 }

@@ -48,7 +48,7 @@ namespace BethanysPieShop
                
                services.AddTransient<IPieRepository, MockPieRepository>();
             */
-            services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<IHeroRepository, HeroRepository>();
             services.AddTransient<IFeedbackRepository, FeedbackRepository>();
 
             /*

@@ -10,7 +10,7 @@ namespace BethanysPieShop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IPieRepository _pieRepository;
+        private readonly IHeroRepository _pieRepository;
 
         /*
          Tack vare "Dependency Injection" så kommer detta ske:
@@ -18,7 +18,7 @@ namespace BethanysPieShop.Controllers
             _pieRepository = new PieRepository()
         */
 
-        public HomeController(IPieRepository pieRepository)
+        public HomeController(IHeroRepository pieRepository)
         {
             _pieRepository = pieRepository;
         }

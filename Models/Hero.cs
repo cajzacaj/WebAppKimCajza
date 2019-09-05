@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.Models
 {
-    public class Pie
+    public class Hero
     {
         public int Id { get; set; }
         public string Name { get; set; }
